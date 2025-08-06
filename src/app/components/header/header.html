@@ -1,0 +1,14 @@
+<header class="header">
+  <a
+    [class.active]="activeRoute === '/'"
+    (click)="navigate('/')"
+  >
+    Photos
+  </a>
+  <a
+    [class.active]="activeRoute === '/favorites'"
+    (click)="navigate('/favorites')"
+  >
+    Favorites
+  </a>
+</header>

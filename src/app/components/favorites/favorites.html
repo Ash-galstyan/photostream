@@ -1,0 +1,12 @@
+<div class="favorites-list">
+  @if (favoritePhotos.length) {
+    @for (photo of favoritePhotos; track photo.id) {
+      <div (click)="viewPhoto(photo.url)" class="img-wrapper">
+        <img [src]="photo.url" alt="Favorite Photo" />
+      </div>
+    }
+  }
+  @if (!favoritePhotos.length) {
+    <p>No favorites added yet.</p>
+  }
+</div>

@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 20px;
+  border: 1px solid #424242;
+  padding: 15px 0;
+}
+a {
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    color: #3a3535;
+  }
+}
+.active {
+  font-weight: bold;
+  color: #232323;
+  border-bottom: 2px solid #232323;
+  transition: all 0.1s ease-in-out;
+}
