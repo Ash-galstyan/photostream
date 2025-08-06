@@ -2,6 +2,10 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.4.
 
+Regarding the requirement to "Don’t use backend server for retaining state" I assumed that this refers to not calling the api for loading favorites.
+The current implementation stores the actual urls after fetching them in the phots.service and later uses them in the favorites page.
+An alternative approach would have been to store the image blobs in the IndexedDB database and later get it from favorites.
+
 ## Development server
 
 To start a local development server, run:
